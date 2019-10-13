@@ -35,20 +35,26 @@ npm i react-native-basic-modal
 
 # Usage
 
+## Component Options
+
+* BasicModal
+* HalloweenModal
+
 ## Import
 
 ```js
-import BasicModal from "react-native-basic-modal";
+import { BasicModal, HalloweenModal } from "react-native-basic-modal";
 ```
+## BasicModal Usage
 
-## Default Usage
+### Default Usage
 
 ```js
 <BasicModal isVisible />
 ```
 
 
-## Customizable Usage
+### Customizable Usage
 
 ```js
 <BasicModal 
@@ -59,6 +65,17 @@ import BasicModal from "react-native-basic-modal";
   secondButtonOnPress={()=> {}}  
 />
 ```
+
+## HalloweenModal
+
+### Important note: You need to add "halloweenTheme" prop!
+
+```js
+<HalloweenModal halloweenTheme isVisible />
+```
+
+You can use the same customization options as BasicModal. HalloweenModal just a special theme for Halloween :)
+
 
 ### How can I hide the modal by pressing outside of its content?
 
@@ -100,10 +117,18 @@ The prop `onBackdropPress` allows you to handle this situation:
 | firstButtonComponent        | component |  default  | set your own button component for first one  |
 | secondButtonComponent       | component |  default  | set your own button component for second one |
 
+
+## Credits
+
+Thank you so much for this awesome theme assets for [Adem 'Allecroom' Kotan](https://dribbble.com/Allecroom)
+You can hire him for 2D, 3D assets :) 
+
+[Hire him!](alperademkotan@gmail.com)
+
 ## Future Plans
 
 - [x] ~~LICENSE~~
-- [ ] Halloween Theme
+- [x] Halloween Theme
 - [ ] Write an article about the lib on Medium
 
 # Change Log

@@ -1,14 +1,13 @@
 import React from "react";
 import { View, StatusBar, SafeAreaView } from "react-native";
-import BasicModal from "./lib/src/BasicModal";
-import HalloweenModal from "./lib/src/HalloweenModal";
+import { BasicModal, HalloweenModal } from "./lib/src/index";
 
 const App = () => {
   return (
     <View>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
-        <HalloweenModal isVisible />
+        <HalloweenModal halloweenTheme isVisible />
       </SafeAreaView>
     </View>
   );
