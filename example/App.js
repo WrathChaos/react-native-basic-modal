@@ -1,6 +1,6 @@
 import React from "react";
 import { View, StatusBar, SafeAreaView } from "react-native";
-import BasicModal from "./lib/src/BasicModal";
+import BasicModal from "react-native-basic-modal";
 
 const App = () => {
   return (
