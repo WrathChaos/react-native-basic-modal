@@ -127,6 +127,8 @@ You can hire him for 2D, 3D assets :)
 
 ### **[Hire him!](mailto:alperademkotan@gmail.com)**
 
+Also, I inspired by [Orizon Design](https://www.instagram.com/p/BtHuW3sBpkG/) Thank you so much guys, nice UI / UX :)
+
 ## Future Plans
 
 - [x] ~~LICENSE~~
