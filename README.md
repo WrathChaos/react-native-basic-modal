@@ -12,7 +12,7 @@
 
 <p align="center">
   <img alt="React Native Basic Modal"
-        src="assets/Screenshots/JSLibraryBoilerplate.png" />
+        src="assets/Screenshots/example.png" />
 </p>
 
 # Installation
