@@ -73,7 +73,7 @@ The prop `onBackdropPress` allows you to handle this situation:
 
 # For more FAQ about Modal: 
 
-## [Modal FAQ](https://github.com/react-native-community/react-native-modal#frequently-asked-questions)
+#### [Modal FAQ](https://github.com/react-native-community/react-native-modal#frequently-asked-questions)
 
 # Configuration - Props
 
