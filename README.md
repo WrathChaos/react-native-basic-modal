@@ -12,7 +12,7 @@
 
 <p align="center">
   <img alt="React Native Halloween Modal"
-        src="assets/Screenshots/example.png" width="49%" />
+        src="assets/Screenshots/halloween.png" width="49%" />
   <img alt="React Native Basic Modal"
         src="assets/Screenshots/example.png" width="49%" />
 </p>
