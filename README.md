@@ -122,10 +122,10 @@ The prop `onBackdropPress` allows you to handle this situation:
 
 ## Credits
 
-Thank you so much for this awesome theme assets for [Adem 'Allecroom' Kotan](https://dribbble.com/Allecroom)
+Thank you so much for this awesome theme assets for **[Adem 'Allecroom' Kotan](https://dribbble.com/Allecroom)**
 You can hire him for 2D, 3D assets :) 
 
-[Hire him!](alperademkotan@gmail.com)
+### **[Hire him!](alperademkotan@gmail.com)**
 
 ## Future Plans
 
