@@ -60,6 +60,21 @@ import BasicModal from "react-native-basic-modal";
 />
 ```
 
+### How can I hide the modal by pressing outside of its content?
+
+The prop `onBackdropPress` allows you to handle this situation:
+
+```javascript
+<BasicModal
+  isVisible={this.state.isVisible}
+  onBackdropPress={() => this.setState({ isVisible: false })}
+/>
+```
+
+# For more FAQ about Modal: 
+
+## [Modal FAQ](https://github.com/react-native-community/react-native-modal#frequently-asked-questions)
+
 # Configuration - Props
 
 | Property                    |   Type    |  Default  | Description                                  |
