@@ -130,7 +130,7 @@ You can hire him for 2D, 3D assets :)
 ## Future Plans
 
 - [x] ~~LICENSE~~
-- [x] Halloween Theme
+- [x] ~~Halloween Theme~~
 - [ ] Write an article about the lib on Medium
 
 # Change Log
