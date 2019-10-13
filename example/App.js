@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar
-} from "react-native";
+import { View, StatusBar, SafeAreaView } from "react-native";
 import BasicModal from "./lib/src/BasicModal";
 
 const App = () => {
@@ -14,7 +7,7 @@ const App = () => {
     <View>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
-        <BasicModal isVisible={false} />
+        <BasicModal isVisible />
       </SafeAreaView>
     </View>
   );

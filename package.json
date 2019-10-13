@@ -1,8 +1,15 @@
 {
-  "name": "react-native-library-boilerplate",
-  "version": "0.0.2",
-  "description": "Description for library",
+  "name": "react-native-basic-modal",
+  "version": "0.0.1",
+  "description": "Basic & Elegant UI Modal for React Native",
   "keywords": [
+    "theme",
+    "halloween",
+    "modal",
+    "basic",
+    "ui",
+    "front-end",
+    "elegant",
     "FreakyCoder",
     "freakycoder",
     "kuray",
@@ -14,13 +21,14 @@
     "rn"
   ],
   "homepage": "https://www.freakycoder.com",
-  "bugs": "https://github.com/WrathChaos/react-native-library-boilerplate/issues",
-  "main": "./lib/src/index.js",
-  "repository": "git@github.com:WrathChaos/react-native-library-boilerplate.git",
+  "bugs": "https://github.com/WrathChaos/react-native-basic-modal/issues",
+  "main": "./lib/src/BasicModal.js",
+  "repository": "git@github.com:WrathChaos/react-native-basic-modal.git",
   "author": "Kuray (FreakyCoder) <kurayogun@gmail.com>",
   "license": "MIT",
   "peerDependencies": {
     "react": ">= 16.x.x",
-    "react-native": ">= 0.55.x"
+    "react-native": ">= 0.55.x",
+    "react-native-modal": ">= 11.4.0"
   }
 }
