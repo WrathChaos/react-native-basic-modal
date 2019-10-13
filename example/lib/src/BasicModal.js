@@ -3,11 +3,21 @@ import PropTypes from "prop-types";
 import { Text, View } from "react-native";
 import Modal from "react-native-modal";
 import Button from "./components/Button/Button";
+import styles, { container, _titleStyle, _descStyle } from "./BasicModal.style";
 
 const BasicModal = props => {
   const [visibility, setVisibility] = useState(true);
   const {
+    width,
+    title,
+    height,
     isVisible,
+    descStyle,
+    descColor,
+    titleColor,
+    titleStyle,
+    description,
+    backgroundColor,
     firstButtonText,
     secondButtonText,
     firstButtonOnPress,
@@ -21,51 +31,17 @@ const BasicModal = props => {
   } = props;
   return (
     <Modal
+      style={styles.modalContainer}
       isVisible={isVisible || visibility}
-      style={{ alignItems: "center", justifyContent: "center" }}
       onBackdropPress={() => setVisibility(false)}
     >
-      <View
-        style={{
-          height: 185,
-          width: "90%",
-          backgroundColor: "#fff",
-          borderTopEndRadius: 64,
-          borderBottomStartRadius: 64
-        }}
-      >
-        <View
-          style={{
-            marginTop: 24,
-            marginLeft: 24,
-            marginRight: 16,
-            marginBottom: 24
-          }}
-        >
-          <Text style={{ fontSize: 22, fontWeight: "bold", color: "#000" }}>
-            Hold on!
-          </Text>
-          <Text
-            style={{
-              marginTop: 8,
-              fontSize: 14,
-              color: "#ccc",
-              fontWeight: "700"
-            }}
-          >
-            Would you like to try our short tutorial to show you how this app
-            work? It will take no more than 30 seconds!
-          </Text>
+      <View style={container(height, width, backgroundColor)}>
+        <View style={styles.containerGlue}>
+          <Text style={titleStyle || _titleStyle(titleColor)}>{title}</Text>
+          <Text style={descStyle || _descStyle(descColor)}>{description}</Text>
         </View>
-        <View
-          style={{
-            position: "absolute",
-            right: 16,
-            bottom: 24,
-            flexDirection: "row"
-          }}
-        >
-          <View style={{ marginRight: 8 }}>
+        <View style={styles.buttonContainer}>
+          <View style={styles.firstButtonContainer}>
             <Button
               buttonText={firstButtonText}
               onPress={firstButtonOnPress}
@@ -88,7 +64,12 @@ const BasicModal = props => {
 };
 
 BasicModal.propTypes = {
+  title: PropTypes.string,
   isVisible: PropTypes.bool,
+  descColor: PropTypes.string,
+  titleColor: PropTypes.string,
+  description: PropTypes.string,
+  backgroundColor: PropTypes.string,
   firstButtonText: PropTypes.string,
   secondButtonText: PropTypes.string,
   firstButtonTextColor: PropTypes.string,
@@ -98,12 +79,20 @@ BasicModal.propTypes = {
 };
 
 BasicModal.defaultProps = {
+  width: "90%",
+  height: 185,
+  title: "Hold on!",
+  descColor: "#b5b5b5",
+  titleColor: "#212121",
+  backgroundColor: "#fff",
   firstButtonText: "SKIP",
   secondButtonText: "NEXT",
   firstButtonTextColor: "#fff",
   secondButtonTextColor: "#fff",
   firstButtonBackgroundColor: "#b5b6cf",
-  secondButtonBackgroundColor: "#895aaf"
+  secondButtonBackgroundColor: "#895aaf",
+  description:
+    "Would you like to try our short tutorial to show you how this app work? It will take no more than 30 seconds!"
 };
 
 export default BasicModal;
