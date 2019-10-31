@@ -51,14 +51,14 @@ import { BasicModal, HalloweenModal } from "react-native-basic-modal";
 
 ### Default Usage
 
-```js
+```jsx
 <BasicModal isVisible />
 ```
 
 
 ### Customizable Usage
 
-```js
+```jsx
 <BasicModal 
   isVisible
   title="Warning!" 
@@ -72,7 +72,7 @@ import { BasicModal, HalloweenModal } from "react-native-basic-modal";
 
 ### Important note: You need to add "halloweenTheme" prop!
 
-```js
+```jsx
 <HalloweenModal halloweenTheme isVisible />
 ```
 
@@ -83,7 +83,7 @@ You can use the same customization options as BasicModal. HalloweenModal just a 
 
 The prop `onBackdropPress` allows you to handle this situation:
 
-```javascript
+```jsx
 <BasicModal
   isVisible={this.state.isVisible}
   onBackdropPress={() => this.setState({ isVisible: false })}
