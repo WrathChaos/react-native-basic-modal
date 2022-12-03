@@ -25,7 +25,7 @@ module.exports = {
     "react-hooks",
     "@typescript-eslint",
     "promise",
-    "jest",2
+    "jest",
     "unused-imports",
   ],
   env: {

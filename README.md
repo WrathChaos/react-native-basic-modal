@@ -11,10 +11,8 @@
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=for-the-badge)](https://github.com/prettier/prettier)
 
 <p align="center">
-  <img alt="React Native Halloween Modal"
-        src="assets/Screenshots/halloween.png" width="49%" height="710"/>
   <img alt="React Native Basic Modal"
-        src="assets/Screenshots/example.png" width="49%" />
+        src="assets/screenshots/react-native-basic-modal.png" />
 </p>
 
 # Installation
@@ -29,23 +27,16 @@ npm i react-native-basic-modal
 
 ###### IMPORTANT! You need install them
 
-```js
-"react": ">= 16.x.x",
-"react-native": ">= 0.55.x",
+```json
 "react-native-modal": ">= 11.4.0"
 ```
 
 # Usage
 
-## Component Options
-
-* BasicModal
-* HalloweenModal
-
 ## Import
 
 ```js
-import { BasicModal, HalloweenModal } from "react-native-basic-modal";
+import BasicModal, { Button } from "react-native-basic-modal";
 ```
 ## BasicModal Usage
 
