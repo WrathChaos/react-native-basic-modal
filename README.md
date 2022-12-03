@@ -15,6 +15,12 @@
         src="assets/screenshots/react-native-basic-modal.png" />
 </p>
 
+Version 1 😍
+- Written from scratch  🍻
+- Typescript 💪
+- Much better API
+- Better customizations
+
 # Installation
 
 Add the dependency:
