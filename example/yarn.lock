@@ -5738,10 +5738,10 @@
   dependencies:
     "prop-types" "^15.7.2"
 
-"react-native-basic-modal@^1.0.0":
-  "integrity" "sha512-JojOhBr26JqqDZISKAKOURjg8PJv/sfx8fu6oJtb+LdHMNEa3KU9nZtZg6Mhk7jysToO9bYRhQY2W2WoxdYjZQ=="
-  "resolved" "https://registry.npmjs.org/react-native-basic-modal/-/react-native-basic-modal-1.0.0.tgz"
-  "version" "1.0.0"
+"react-native-basic-modal@^1.0.1":
+  "integrity" "sha512-5tWSc8zhheyzV2niSydMymXqwwST5KEfw6cK8518YQTTm2I5T1rZLz2F56DLleAw+5UgoyNdc+udPqbBV/8Wkg=="
+  "resolved" "https://registry.npmjs.org/react-native-basic-modal/-/react-native-basic-modal-1.0.1.tgz"
+  "version" "1.0.1"
   dependencies:
     "react-native-modal" ">= 11.4.0"
 

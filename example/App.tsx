@@ -1,6 +1,6 @@
 import React from 'react';
 import {View} from 'react-native';
-import BasicModal, {Button} from 'react-native-basic-modal';
+import BasicModal, {Button} from './lib';
 
 interface AppProps {}
 
