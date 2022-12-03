@@ -5738,6 +5738,13 @@
   dependencies:
     "prop-types" "^15.7.2"
 
+"react-native-basic-modal@^1.0.0":
+  "integrity" "sha512-JojOhBr26JqqDZISKAKOURjg8PJv/sfx8fu6oJtb+LdHMNEa3KU9nZtZg6Mhk7jysToO9bYRhQY2W2WoxdYjZQ=="
+  "resolved" "https://registry.npmjs.org/react-native-basic-modal/-/react-native-basic-modal-1.0.0.tgz"
+  "version" "1.0.0"
+  dependencies:
+    "react-native-modal" ">= 11.4.0"
+
 "react-native-codegen@^0.70.6":
   "integrity" "sha512-kdwIhH2hi+cFnG5Nb8Ji2JwmcCxnaOOo9440ov7XDzSvGfmUStnCzl+MCW8jLjqHcE4icT7N9y+xx4f50vfBTw=="
   "resolved" "https://registry.npmjs.org/react-native-codegen/-/react-native-codegen-0.70.6.tgz"
@@ -5753,7 +5760,7 @@
   "resolved" "https://registry.npmjs.org/react-native-gradle-plugin/-/react-native-gradle-plugin-0.70.3.tgz"
   "version" "0.70.3"
 
-"react-native-modal@^13.0.1":
+"react-native-modal@^13.0.1", "react-native-modal@>= 11.4.0":
   "integrity" "sha512-UB+mjmUtf+miaG/sDhOikRfBOv0gJdBU2ZE1HtFWp6UixW9jCk/bhGdHUgmZljbPpp0RaO/6YiMmQSSK3kkMaw=="
   "resolved" "https://registry.npmjs.org/react-native-modal/-/react-native-modal-13.0.1.tgz"
   "version" "13.0.1"

@@ -1,10 +1,10 @@
 {
   "name": "react-native-basic-modal",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Basic & Elegant UI Modal for React Native",
   "homepage": "https://www.freakycoder.com",
   "bugs": "https://github.com/WrathChaos/react-native-basic-modal/issues",
-  "main": "./lib/index.js",
+  "main": "./build/dist/index.js",
   "repository": "git@github.com:WrathChaos/react-native-basic-modal.git",
   "author": "Kuray (FreakyCoder) <kurayogun@gmail.com>",
   "license": "MIT",
