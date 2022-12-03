@@ -7,7 +7,7 @@ import Modal from "react-native-modal";
 import styles from "./BasicModal.style";
 import Button from "../Button/Button";
 
-interface BasicModalProps {
+export interface BasicModalProps {
   title: string;
   description: string;
   isVisible: boolean;
