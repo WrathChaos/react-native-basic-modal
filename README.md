@@ -20,6 +20,10 @@ Version 1 😍
 - Typescript 💪
 - Much better API
 - Better customizations
+- Much better library fundamentals
+- Husky Setup 🐶
+    - Commit Linter
+    - Prettier
 
 # Installation
 
