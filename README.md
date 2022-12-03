@@ -43,34 +43,54 @@ import BasicModal, { Button } from "react-native-basic-modal";
 ### Default Usage
 
 ```jsx
-<BasicModal isVisible />
-```
-
-
-### Customizable Usage
-
-```jsx
-<BasicModal 
+<BasicModal
   isVisible
-  title="Warning!" 
-  desciption="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-  firstButtonOnPress={()=> {}}  
-  secondButtonOnPress={()=> {}}  
+  title="Hold on!"
+  description="Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh."
 />
 ```
 
-## HalloweenModal
 
-### Important note: You need to add "halloweenTheme" prop!
+### Advanced Usage with custom header component and custom footer component
 
 ```jsx
-<HalloweenModal halloweenTheme isVisible />
+<BasicModal
+  isVisible
+  title="Hold on!"
+  description="Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh."
+  headerComponent={
+    <View>
+      <Text>Hey Header</Text>
+    </View>
+  }
+  footerComponent={
+    <View>
+      <Text>Hey Footer</Text>
+    </View>
+  }
+/>
 ```
 
-You can use the same customization options as BasicModal. HalloweenModal just a special theme for Halloween :)
+
+### Advanced Usage with **custom buttons**
+
+Of course you do not need to use `built-in` Button component from library. You can put anything into the `children`  
+_Note:_If you need to customize the default buttons, you should use this method instead, it will be much easier and customizable
+
+```jsx
+<BasicModal
+  isVisible
+  title="Hold on!"
+  description="Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh.">
+  <View style={styles.buttonsContainer}>
+    <Button text="Cancel" onPress={() => {}} />
+    <Button text="Okay" onPress={() => {}} />
+  </View>
+</BasicModal>
+```
 
 
-### How can I hide the modal by pressing outside of its content?
+### How can I hide the modal by pressing outside its content?
 
 The prop `onBackdropPress` allows you to handle this situation:
 
@@ -85,56 +105,57 @@ The prop `onBackdropPress` allows you to handle this situation:
 
 #### [Modal FAQ](https://github.com/react-native-community/react-native-modal#frequently-asked-questions)
 
+
+## Example Project 😍
+
+You can check out the example project 🥰
+
+Simply run
+
+- `npm i`
+- `react-native run-ios/android`
+
+should work of the example project.
+
 # Configuration - Props
 
-| Property                    |   Type    |  Default  | Description                                  |
-| --------------------------- | :-------: | :-------: | -------------------------------------------- |
-| width                       |  number   |    90%    | change the modal's width                     |
-| height                      |  number   |    185    | change the modal's height                    |
-| isVisible                   |   bool    |   false   | set the modal's visibility                   |
-| title                       |  string   | Hold on!  | set your own title text                      |
-| description                 |  string   | too long  | set your own description text                |
-| titleColor                  |   color   |  #212121  | change the title's text color                |
-| descColor                   |   color   |  #b5b5b5  | change the description's text color          |
-| titleStyle                  |   style   |   style   | set your own style for title text            |
-| descStyle                   |   style   |   style   | set your own style for description text      |
-| backgroundColor             |   color   |   #fff    | change the modal's background color          |
-| firstButtonText             |  string   |   SKIP    | set your own button text                     |
-| secondButtonText            |   color   |   NEXT    | set your own button text                     |
-| firstButtonTextColor        |   color   |   #fff    | change the first button's text color         |
-| secondButtonTextColor       |   color   |   #fff    | change the second button's text color        |
-| firstButtonBackgroundColor  |   color   |  #b5b6cf  | change the first button's background color   |
-| secondButtonBackgroundColor |   color   |  #895aaf  | change the second button's background color  |
-| firstButtonOnPress          | function  | undefined | set your own onPress function                |
-| secondButtonOnPress         | function  | undefined | set your own onPress function                |
-| firstButtonComponent        | component |  default  | set your own button component for first one  |
-| secondButtonComponent       | component |  default  | set your own button component for second one |
+| Property               |   Type    | Default  | Required | Description                                                         |
+|------------------------|:---------:|:--------:|:--------:|---------------------------------------------------------------------|
+| isVisible              |   bool    |  false   |    🟢    | set the modal's visibility                                          |
+| title                  |  string   | Hold on! |    🟢    | set your own title text                                             |
+| description            |  string   | default  |    🟢    | set your own description text                                       |
+| primaryButtonText      |  string   | default  |    🟡    | change default primary button's text                                |
+| secondaryButtonText    |  string   | default  |    🟡    | change default secondary button's text                              |
+| onPrimaryButtonPress   | function  | default  |    🟡    | set the function when the primary button is pressed                 |
+| onSecondaryButtonPress | function  | default  |    🟡    | set the function when the secondary button is pressed               |
+| onBackdropPress        | function  | default  |    🟡    | set the function when the backdrop of the modal is pressed          |
+| headerComponent        | component |   none   |    🟡    | set your own component if you need to add/customize header component |
+| footerComponent        | component |   none   |    🟡    | set your own component if you need to add/customize footer component |
+| style                  | ViewStyle | default  |    🟡    | set/override the default style                        |
+| modalContainerStyle                  | ViewStyle | default  |    🟡    | set/override the default style                   |
+| contentContainerStyle                  | ViewStyle | default  |    🟡    | set/override the default style            |
+| buttonsContainerStyle                  | ViewStyle | default  |    🟡    | set/override the default style                         |
+| titleTextStyle                  | TextStyle | default  |    🟡    | set/override the default style                         |
+| descriptionTextStyle                  | TextStyle | default  |    🟡    | set/override the default style                         |
 
+# Configuration - Props [Button] Component
+
+| Property               |   Type    | Default  | Required | Description                                                   |
+|------------------------|:---------:|:--------:|:--------:|---------------------------------------------------------------|
+| text                   |  string   | Hold on! |    🟡    | set text                                              |
+| style                  | ViewStyle | default  |    🟡    | set/override the default style                                |
+| onPress                | function  | default  |    🟡    | set the function           |
+| textStyle              | TextStyle | default  |    🟡    | set/override the default style                                |
 
 ## Credits
-
-Thank you so much for this awesome theme assets for **[Adem 'Allecroom' Kotan](https://dribbble.com/Allecroom)**
-You can hire him for 2D, 3D assets :) 
-
-### **[Hire him!](mailto:alperademkotan@gmail.com)**
-
-Also, I inspired by [Orizon Design](https://www.instagram.com/p/BtHuW3sBpkG/) Thank you so much guys, nice UI / UX :)
+I inspired by [Orizon Design](https://www.instagram.com/p/BtHuW3sBpkG/) Thank you so much guys, nice UI / UX :)
 
 ## Future Plans
 
 - [x] ~~LICENSE~~
-- [x] ~~Halloween Theme~~
+- [x] ~~Typescript~~
+- [x] ~~Version 1.0.0~~
 - [ ] Write an article about the lib on Medium
-
-# Change Log
-
-## [0.0.5](https://github.com/WrathChaos/react-native-basic-modal/tree/0.0.5) (2019-10-13)
-[Full Changelog](https://github.com/WrathChaos/react-native-basic-modal/compare/0.0.1...0.0.5)
-
-## [0.0.1](https://github.com/WrathChaos/react-native-basic-modal/tree/0.0.1) (2019-10-13)
-[Full Changelog](https://github.com/WrathChaos/react-native-basic-modal/compare/0.0.2...0.0.1)
-
-\* *This Change Log was automatically generated by [github_changelog_generator](https://github.com/skywinder/Github-Changelog-Generator)*
 
 ## Author
 
