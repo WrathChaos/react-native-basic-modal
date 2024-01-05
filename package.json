@@ -31,7 +31,7 @@
     "react-native-modal": ">= 11.4.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.3.0",
+    "@commitlint/cli": "^18.4.4",
     "@commitlint/config-conventional": "^17.3.0",
     "@react-native-community/eslint-config": "^3.2.0",
     "@types/react": "^18.0.26",
